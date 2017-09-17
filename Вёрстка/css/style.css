@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+	font-family: 'Arimo', sans-serif;
+	color: #2a3343;
+}
+
+a {
+	font-family: 'Arimo', sans-serif;
+}
+.top-menu1 a {
+	font-size: 12px;
+	color: #9ea2a9;
+	transition: 1s;
+	font-family: 'Arimo', sans-serif;
+	
+}
+.top-menu1 a:hover {
+	color: #000;
+}
+.city {
+	font-size: 13px;
+}
+.top-phone {
+	font-size: 20px;
+}
+.work-time {
+	color: #9ea2a9;
+	font-size: 13px;
+}
+.logo {
+	width: 222px;
+	height: 17px;
+	background: url(../images/logo.png) no-repeat;
+	margin: 30px auto;
+}
+.cart-block {
+	display: block;
+	background: url(../images/cart-bg.png) left center no-repeat;
+	padding-left: 50px;
+	font-size: 13px;
+	line-height: 75px;
+	font-weight: bold;
+	color: #000;
+}
+
+.cart-block:hover {
+	text-decoration: underline;
+	color: #000;
+}
+.header-main {
+	border-bottom: 1px solid 
+}
+.goods-menu {
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+.goods-menu li {
+	margin: 0 10px;
+}
