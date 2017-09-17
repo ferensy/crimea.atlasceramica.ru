@@ -59,3 +59,73 @@ a {
 .goods-menu li {
 	margin: 0 10px;
 }
+.goods-menu a {
+	color: #2a3343;
+	line-height: 40px;
+}
+#slide1, #slide2, #slide3 {
+	height: 500px;
+}
+#slide1 {
+	background: url(../images/slider-1.jpg) no-repeat center;
+}
+#slide2 {
+	background: url(../images/slider-2.jpg) no-repeat center;
+}
+#slide3 {
+	background: url(../images/slider-3.jpg) no-repeat center;
+}
+.slider-content {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 40px 0;
+}
+.title-slider {
+	font-size: 36px;
+	color: #fff;
+}
+.text-slider {
+	color: #fff;
+	font-size: 18px;
+}
+.slider-content {
+	position:relative;
+	top:150px;
+}
+.slider-link {
+	display: block;
+	background-color: #fff;
+	padding: 10px;
+	width: 100px;
+	margin: 20px auto;
+}
+.top-coll-header {
+	line-height: 100px;
+}
+.top-collection {
+	margin-bottom: 40px;
+}
+.top-collection img, .top-sales img {
+	width: 100%;
+}
+.top-coll-title {
+	font-size: 20px;
+	line-height: 30px;
+	text-align: left;
+}
+.top-coll-text {
+	text-align: left;
+}
+.top-sales {
+	background-color: #edeef0;
+}
+.top-sales h2 {
+	font-size: 30px;
+	line-height: 80px;
+}
+.tile-label {
+	margin: 5px 0;
+}
+.price {
+	font-weight: bold;
+	font-size: 15px;
+}
