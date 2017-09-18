@@ -3,6 +3,7 @@
 body {
 	font-family: 'Arimo', sans-serif;
 	color: #2a3343;
+	font-size: 14px;
 }
 
 a {
@@ -42,8 +43,19 @@ a {
 	line-height: 75px;
 	font-weight: bold;
 	color: #000;
+	position: relative;
 }
-
+.not-empty {
+	float: left;
+	position: absolute;
+	top: 15px;
+    left: 20px;
+	background-color: #ef0b41;
+	border-radius: 15px;
+	padding: 8px;
+	line-height: 6px;
+	color: #fff;
+}
 .cart-block:hover {
 	text-decoration: underline;
 	color: #000;
@@ -65,6 +77,7 @@ a {
 }
 #slide1, #slide2, #slide3 {
 	height: 500px;
+	width: 100%;
 }
 #slide1 {
 	background: url(../images/slider-1.jpg) no-repeat center;
@@ -107,6 +120,9 @@ a {
 .top-collection img, .top-sales img {
 	width: 100%;
 }
+.top-sales .col-md-3 {
+	margin-bottom: 30px;
+}
 .top-coll-title {
 	font-size: 20px;
 	line-height: 30px;
@@ -117,6 +133,7 @@ a {
 }
 .top-sales {
 	background-color: #edeef0;
+	padding-bottom: 70px;
 }
 .top-sales h2 {
 	font-size: 30px;
@@ -124,8 +141,218 @@ a {
 }
 .tile-label {
 	margin: 5px 0;
+	font-size: 17px;
 }
 .price {
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
+}
+.sale-price {
+	font-size: 20px;
+	color: #9ea2a9;
+}
+.sale-price  span{
+	color: #d51422;
+	float: right;
+	font-weight: bold;
+}
+
+.sale-lable {
+	border-radius: 25px;
+	background-color: #d51422;
+	padding: 10px 14px ;
+	color: #fff;
+	font-weight: bold;
+	float: left;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.top-sales col-md-3 {
+	position:relative;
+}
+.text-block {
+	padding: 40px 0;
+	border-bottom: 1px solid #edeef0;
+}
+.text-block h1 {
+	font-size: 25px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.text-block p {
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+.footer-text {
+	color: #9ea2a9;
+	margin-bottom: 20px;
+}
+footer {
+	padding-top: 70px;
+}
+footer p {
+	margin-bottom: 2px;
+}
+.footer-menu  {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.footer-menu li {
+	margin-bottom: 5px;
+}
+.footer-menu a {
+	font-size: 17px;
+	color: #2d3545;
+
+}
+.footer-menu a:hover {
+	color: #2d3545;
+}
+.footer-logo {
+	width: 222px;
+	height: 17px;
+	background: url(../images/logo.png) no-repeat;
+	margin-bottom: 30px;
+}
+.copyright {
+	font-size: 12px;
+	color: #9ea2a9;
+}
+.card-block {
+	width: 216px;
+	height: 36px;
+	background: url(../images/card.png) no-repeat;
+	margin-bottom: 10px;
+}
+.descr-coll h1, .descr-good h1 {
+	font-size: 30px;
+}
+.descr-coll h2 {
+	font-size: 20px;
+}
+.descr-coll p {
+	font-size: 17px;
+}
+.descr-coll a {
+	font-size: 14px;
+	color: #2146be;
+	transition: 1s;
+	font-weight: bold;
+}
+.descr-coll a:hover {
+	color: #ef0b41;
+	text-decoration: none;
+}
+.descr-coll {
+	padding: 30px 0 40px;
+}
+.breadcrumbs a {
+	color: #2a3343;
+	font-size: 14px;
+}
+.breadcrumbs a:hover{
+	color: #2a3343;
+}
+.breadcrumbs {
+	color: #9ea2a9;
+	margin-bottom: 40px;
+}
+.property div {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+.property  span {
+	color: #9ea2a9;
+}
+.property a {
+	color: #2146be;
+	transition: 1s;
+}
+.property a:hover {
+	color: #ef0b41;
+	text-decoration: none;
+}
+.images-goods img, .thumbnails img, .articles-img img {
+	width: 100%;
+}
+.thumbnails {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.old-price {
+	color: #9ea2a9;
+	text-decoration: line-through;
+	font-size: 17px;
+}
+.real-price {
+	font-size: 36px;
+	font-weight: bold;
+}
+.quantity {
+	font-size: 17px;
+	line-height: 80px;
+}
+.quantity input {
+	border: none;
+	width:25px;
+	padding-left: 5px;
+}
+.quantity div {
+	float: right;
+}
+.buy-now {
+	display: block;
+	color: #fff;
+	padding: 20px 0 20px 20px;
+	margin-top: 20px;
+	background: url(../images/arrow-left.png) 90% 50%  no-repeat #2146be;
+	border: 1px solid #2146be;
+}
+.buy-now:hover {
+	color: #2146be;
+	background: url(../images/arrow-left-hover.png) 90% 50%  no-repeat #fff;
+	border: 1px solid #2146be;
+	text-decoration: none;
+} 
+.buy {
+	display: block;
+	color: #fff;
+	padding: 20px 0 20px 20px;
+	margin-top: 10px;
+	background: url(../images/plus-hover.png) 90% 50%  no-repeat #2146be;
+	border: 1px solid #2146be;
+}
+.buy:hover {
+	color: #2146be;
+	background: url(../images/plus.png) 90% 50%  no-repeat #fff;
+	border: 1px solid #2146be;
+	text-decoration: none;
+}
+.visio {
+	background: url(../images/3d.png) 1% 50% no-repeat;
+	padding: 5px 0 5px 50px;
+	color: #ef0b41;
+	margin-top: 15px;
+}
+.articles {
+	border-bottom: 1px solid #edeef0;
+	padding: 20px 0;
+}
+.articles a {
+	color: #2146be;
+}
+.articles a:hover {
+	color: #2146be;
+}
+.man-img  img {
+	width: 100%;
+}
+.manuf-unit {
+	display: table;
+}
+.manuf-unit {
+	display: table-cell;
+	vertical-align: center;
 }
