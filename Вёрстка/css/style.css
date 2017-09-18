@@ -74,7 +74,7 @@ a {
 	font-weight: bold;
 	color: #000;
 	position: relative;
-	width: 108px;
+	width: 110px;
 	margin: 0 auto;
 }
 .not-empty {
@@ -412,4 +412,62 @@ footer p {
 	color: #000;
 	text-decoration: none;
 	
+}
+.manuf-descr {
+	margin-bottom: 30px;
+}
+.manuf {
+	height: 350px;
+}
+..cart-table {
+	width: 100%;
+}
+.cart-table td {
+	padding: 5px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-table .quantity input {
+	margin-left: 0;
+}
+.total {
+	font-size: 20px;
+	text-align: right;
+	margin: 20px 0 5px;
+}
+.total  span {
+	font-weight: bold;
+}
+.min-price {
+	text-align: right;
+}
+.cart-table a:hover {
+	text-decoration: none;
+}
+
+
+.min-price {
+	color: #cc0000;
+}
+.form-order {
+	margin-top: 60px;
+}
+.form_card input, .form_card textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	height: 30px;
+	border: 1px solid #e0e0e0; 
+	border-radius: 4px;
+	padding: 10px;
+}
+.form_card textarea {
+	height: 100px;
+}
+.form_card p {
+	margin:0 0 2px;
+}
+.form_card a{
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 40px;
 }
