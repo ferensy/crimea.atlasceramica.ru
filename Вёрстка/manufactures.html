@@ -29,42 +29,108 @@
 <body>
 <header class="container">
 	<div class="row">
-		<nav  class="text-center">
-			<ul class="list-inline top-menu1">
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Гарантия и Возврат</a></li>
-				<li><a href="#">Контакты</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Как купить</a></li>
-				<li><a href="#">Доставка</a></li>
-			</ul>
-		</nav>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle top-menu-button" data-toggle="collapse" data-target="#top-menu">
+				<span class="sr-only">Открыть навигацию</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="top-menu">
+			<nav  class="text-center">
+				<ul class="list-inline top-menu1">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Гарантия и Возврат</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Как купить</a></li>
+					<li><a href="#">Доставка</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
+<!--	<div class="row text-center">
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle top-menu-button" data-toggle="collapse" data-target="#top-menu">
+						<span class="sr-only">Открыть навигацию</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="top-menu">
+					<ul class="nav navbar-nav top-menu1">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Гарантия и Возврат</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Как купить</a></li>
+						<li><a href="#">Доставка</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
 	<div class="row header-main">
-		<div class="col-md-3">
+		<div class="col-md-3 col-sm-4 col-4 text-center">
 			<div class="city">Крым</div>
 			<div class="top-phone">8 (800) 687-32-37</div>
 			<div class="work-time">с 9:00 до 19:00</div>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-5 col-5">
 			<div class="logo"></div>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-2 col-sm-3 col-3">
 			<a href="#" class="cart-block">
-				12500 р.<div class="not-empty">3</div>
+				729500 р.<div class="not-empty">3</div>
 			</a>
 		</div>
 	</div>
 	<div class="row">
 		<nav class="text-center">
 			<ul class="list-inline goods-menu">
-				<li><a href="">Производители</a></li>
-				<li><a href="">Акции</a></li>
-				<li><a href="">Плитка</a></li>
-				<li><a href="">Ламинат</a></li>
-				<li><a href="">Паркет</a></li>
-				<li><a href="">Линолеум</a></li>
-				<li><a href="">Сопутствующие товары</a></li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Производители <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Плитка</a></li>
+						<li><a href="#">Ламинат</a></li>
+						<li><a href="#">Линолеум</a></li>
+						<li><a href="#">Паркет</a></li>
+					</ul>
+				</li>
+				<li><a href="" id="sales-menu">Акции</a></li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Плитка <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Ламинат <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Паркет <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Линолеум <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Сопутствующие товары <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -76,32 +142,255 @@
 			<h1>Производители керамической плитки</h1>
 		</div>
 		<div class="col-md-12 text-center breadcrumbs">
-			<a href="#">Главная</a> - <a href="#">Полезные стаить</a> - Производство керамической плитки и керамогранита.
+			<a href="#">Главная</a> - Производители
 		</div>
 		<div class="col-md-10 col-md-offset-1 man-descr">
 Керамическая плитка еще с древних времен очень широко применяется в отделке и в строительстве. Как материал для внутренней или внешней отделки - керамика практически не имеет достойных конкурентов. Поэтому еще со времен Древнего Египта многие мастера начинали заниматься производством керамической плитки. Используемое сырье добывалось из глинистых материалов с добавлением различных природных минералов и в последствии обжигалось, и сжималось под высоким давлением для формирования удобной для отделки формы. На сегодняшний день это одно из самых востребованных направлений производства. Ведущие мировые заводы по производству керамики находятся в Италии, Испании, Португалии, России и многих других странах. Каждый из них старается найти свой собственный и неповторимый стиль, и а так же разработать и внедрить те или иные инновационные отличия в технологиях производства. Для того что бы оставаться на волне при столь большой конкуренции каждый производитель керамической плитки предлагает огромный ассортимент модельных рядов. Благодаря столь развитому рынку вы без труда можете подобрать плитку на свой вкус и под свой интерьер среди всего этого разнообразия.
 		</div>
 		
 	</div>
-	<div class="row man-img">
-		<div class="col-md-3 manuf-unit">
-			<div>
-				<img src="images/1.png" alt="">
+	<div class="row man-img manuf-field">
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<a href="#"><img src="images/1.png" alt=""></a>
+					<a href="#">Bayker</a>
+				</div>
 			</div>
-			<a href="#">Bayker</a>
 		</div>
-		<div class="col-md-3">
-			<img src="images/2.png" alt="">
-			<a href="#">Bestile</a>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-3">
-			<img src="images/3.png" alt="">
-			<a href="#">Caesar</a>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/3.png" alt="">
+					<a href="#">Caesar</a>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-3">
-			<img src="images/4.png" alt="">
-			<a href="#">Ceracasa</a>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/4.png" alt="">
+					<a href="#">Ceracasa</a>
+				</div>
+			</div>
 		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/331.jpg" alt="">
+					<a href="#">41ZERO42</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<a href="#"><img src="images/1.png" alt=""></a>
+					<a href="#">Bayker</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/3.png" alt="">
+					<a href="#">Caesar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/4.png" alt="">
+					<a href="#">Ceracasa</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/331.jpg" alt="">
+					<a href="#">41ZERO42</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<a href="#"><img src="images/1.png" alt=""></a>
+					<a href="#">Bayker</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/3.png" alt="">
+					<a href="#">Caesar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/4.png" alt="">
+					<a href="#">Ceracasa</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/331.jpg" alt="">
+					<a href="#">41ZERO42</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<a href="#"><img src="images/1.png" alt=""></a>
+					<a href="#">Bayker</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/3.png" alt="">
+					<a href="#">Caesar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/4.png" alt="">
+					<a href="#">Ceracasa</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/331.jpg" alt="">
+					<a href="#">41ZERO42</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<a href="#"><img src="images/1.png" alt=""></a>
+					<a href="#">Bayker</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/3.png" alt="">
+					<a href="#">Caesar</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/4.png" alt="">
+					<a href="#">Ceracasa</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/331.jpg" alt="">
+					<a href="#">41ZERO42</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-4">
+			<div class="manuf-img-wrap">
+				<div>
+					<img src="images/2.png" alt="">
+					<a href="#">Bestile</a>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 </div>
