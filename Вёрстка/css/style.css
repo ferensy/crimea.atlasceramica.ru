@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
-
 body {
 	font-family: 'Arimo', sans-serif;
 	color: #2a3343;
@@ -8,6 +7,9 @@ body {
 
 a {
 	font-family: 'Arimo', sans-serif;
+}
+.top-menu1 {
+	float: none;
 }
 .top-menu1 a {
 	font-size: 12px;
@@ -19,6 +21,33 @@ a {
 .top-menu1 a:hover {
 	color: #000;
 }
+.top-menu-button  span{
+	background-color: #2a3343;
+}
+@media (max-width: 768px) {
+	.top-menu1 {
+		background-color: #edeef0;
+	}
+	.top-menu1 li {
+		display:block;
+		padding: 5px 0;
+		border-bottom: 1px solid #000;
+		
+		
+	}
+	.top-menu1 a {
+		font-size: 17px;
+		color: #000;
+	}
+	.top-menu1 a:hover {
+		color:#9ea2a9;
+		text-decoration: none;
+	}
+}
+#sales-menu {
+	color: #d51422;
+}
+
 .city {
 	font-size: 13px;
 }
@@ -29,6 +58,7 @@ a {
 	color: #9ea2a9;
 	font-size: 13px;
 }
+
 .logo {
 	width: 222px;
 	height: 17px;
@@ -44,6 +74,8 @@ a {
 	font-weight: bold;
 	color: #000;
 	position: relative;
+	width: 108px;
+	margin: 0 auto;
 }
 .not-empty {
 	float: left;
@@ -112,7 +144,7 @@ a {
 	margin: 20px auto;
 }
 .top-coll-header {
-	line-height: 100px;
+	padding: 30px 0;
 }
 .top-collection {
 	margin-bottom: 40px;
@@ -172,7 +204,7 @@ a {
 	position:relative;
 }
 .text-block {
-	padding: 40px 0;
+	padding: 40px 15px;
 	border-bottom: 1px solid #edeef0;
 }
 .text-block h1 {
@@ -214,7 +246,7 @@ footer p {
 	width: 222px;
 	height: 17px;
 	background: url(../images/logo.png) no-repeat;
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
 }
 .copyright {
 	font-size: 12px;

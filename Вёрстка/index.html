@@ -29,42 +29,108 @@
 <body>
 <header class="container">
 	<div class="row">
-		<nav  class="text-center">
-			<ul class="list-inline top-menu1">
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Гарантия и Возврат</a></li>
-				<li><a href="#">Контакты</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Как купить</a></li>
-				<li><a href="#">Доставка</a></li>
-			</ul>
-		</nav>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle top-menu-button" data-toggle="collapse" data-target="#top-menu">
+				<span class="sr-only">Открыть навигацию</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="top-menu">
+			<nav  class="text-center">
+				<ul class="list-inline top-menu1">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Гарантия и Возврат</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Как купить</a></li>
+					<li><a href="#">Доставка</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
+<!--	<div class="row text-center">
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle top-menu-button" data-toggle="collapse" data-target="#top-menu">
+						<span class="sr-only">Открыть навигацию</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="top-menu">
+					<ul class="nav navbar-nav top-menu1">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Гарантия и Возврат</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Как купить</a></li>
+						<li><a href="#">Доставка</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>-->
 	<div class="row header-main">
-		<div class="col-md-3">
+		<div class="col-md-3 col-sm-4 col-4 text-center">
 			<div class="city">Крым</div>
 			<div class="top-phone">8 (800) 687-32-37</div>
 			<div class="work-time">с 9:00 до 19:00</div>
 		</div>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-5 col-5">
 			<div class="logo"></div>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-2 col-sm-3 col-3">
 			<a href="#" class="cart-block">
-				12500 р.<div class="not-empty">3</div>
+				729500 р.<div class="not-empty">3</div>
 			</a>
 		</div>
 	</div>
 	<div class="row">
 		<nav class="text-center">
 			<ul class="list-inline goods-menu">
-				<li><a href="">Производители</a></li>
-				<li><a href="">Акции</a></li>
-				<li><a href="">Плитка</a></li>
-				<li><a href="">Ламинат</a></li>
-				<li><a href="">Паркет</a></li>
-				<li><a href="">Линолеум</a></li>
-				<li><a href="">Сопутствующие товары</a></li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Производители <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Плитка</a></li>
+						<li><a href="#">Ламинат</a></li>
+						<li><a href="#">Линолеум</a></li>
+						<li><a href="#">Паркет</a></li>
+					</ul>
+				</li>
+				<li><a href="" id="sales-menu">Акции</a></li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Плитка <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Ламинат <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Паркет <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Линолеум <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Сопутствующие товары <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Товары</a></li>
+						<li><a href="#">Коллекции</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -219,19 +285,20 @@
 		</div>
 	</div>
 </div>
-<div class="container text-block">
-	<div class="row">
-		<div class="col-md-12">
-			<h1>Интернет-магазин плитки, сантехники, мебели и напольных покрытий</h1>
-			<p>Вы можете купить плитку у нас на сайте Атлас Керамики. На нашем сайте представлен широкий ассортимент ведущих мировых производителей испанской плитки, итальянской плитки, китайской плитки, португальской плитки, и конечно же российской плитки, и многих других стран. Вы сможете найти у нас керамическую плитку с антискользящем покрытием, матовый керамогранит, глянцевую плитку, плитку с рельефным покрытием или керамическую плитку стилизованную под мрамор, под дерево или под камень. Огромный ассортимент керамики, низкие цены и быстрая доставка это лишь одни из основных критериев выбора нашей компании.</p>
-			<p>Если вы решили купить керамогранит - у нас всегда есть отличное предложения для Вас.</p>
-			<p>Атлас Керамика это оптовая и розничная продажа с быстрой доставкой транспортными компаниями по территории России. Мы являемся официальными дистрибьюторами мировых лидеров рынка производства керамической плитки, и у нас всегда в наличии есть как наиболее популярные, так и самые новые модели плитки от лидеров рынка. Компания AtlasCeramica представляет более 100 Испанских, Итальянских и Российских производителей.</p>
+	<div class="container">
+		<div class="row">
+			<div class="text-block">
+				<h1>Интернет-магазин плитки, сантехники, мебели и напольных покрытий</h1>
+				<p>Вы можете купить плитку у нас на сайте Атлас Керамики. На нашем сайте представлен широкий ассортимент ведущих мировых производителей испанской плитки, итальянской плитки, китайской плитки, португальской плитки, и конечно же российской плитки, и многих других стран. Вы сможете найти у нас керамическую плитку с антискользящем покрытием, матовый керамогранит, глянцевую плитку, плитку с рельефным покрытием или керамическую плитку стилизованную под мрамор, под дерево или под камень. Огромный ассортимент керамики, низкие цены и быстрая доставка это лишь одни из основных критериев выбора нашей компании.</p>
+				<p>Если вы решили купить керамогранит - у нас всегда есть отличное предложения для Вас.</p>
+				<p>Атлас Керамика это оптовая и розничная продажа с быстрой доставкой транспортными компаниями по территории России. Мы являемся официальными дистрибьюторами мировых лидеров рынка производства керамической плитки, и у нас всегда в наличии есть как наиболее популярные, так и самые новые модели плитки от лидеров рынка. Компания AtlasCeramica представляет более 100 Испанских, Итальянских и Российских производителей.</p>
+			</div>	
 		</div>
 	</div>
-</div>
+
 <footer class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-sm-6 col-md-3">
 			<nav>
 				<ul class="footer-menu">
 					<li><a href="">Производители</a></li>
@@ -244,7 +311,7 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="col-md-3">
+		<div class="col-sm-6 col-md-3">
 			<ul class="footer-menu">
 				<li><a href="#">О компании</a></li>
 				<li><a href="#">Гарантия и возврат</a></li>
@@ -254,7 +321,7 @@
 				<li><a href="#">Доставка</a></li>
 			</ul>
 		</div>
-		<div class="col-md-6">
+		<div class="col-sm-12 col-md-6">
 			<div class="footer-logo"></div>
 			<div class="footer-text">Интернет-магазин плитки, сантехники, мебели для ванной и апольных покрытий по самым низким ценам</div>
 			<p>mail: <a href="mailto:info@atlasceramica.ru">info@atlasceramica.ru</a></p>
