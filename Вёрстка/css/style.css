@@ -44,6 +44,7 @@ a {
 		text-decoration: none;
 	}
 }
+
 #sales-menu {
 	color: #d51422;
 }
@@ -334,7 +335,7 @@ footer p {
 .quantity div {
 	float: right;
 }
-.buy-now {
+.buy-now { 
 	display: block;
 	color: #fff;
 	padding: 20px 0 20px 20px;
@@ -419,7 +420,7 @@ footer p {
 .manuf {
 	height: 350px;
 }
-..cart-table {
+.cart-table {
 	width: 100%;
 }
 .cart-table td {
@@ -441,7 +442,7 @@ footer p {
 .min-price {
 	text-align: right;
 }
-.cart-table a:hover {
+.cart-table a:hover, .cart-table a:active, .cart-table a:visited  {
 	text-decoration: none;
 }
 
@@ -470,4 +471,58 @@ footer p {
 	width: 100%;
 	margin-left: 0;
 	margin-bottom: 40px;
+}
+.color {
+	padding: 10px 0;
+	border-bottom: 1px solid #edeeef;
+}
+.color label {
+	display: block;
+
+}
+.color input, .color span {
+	display: inline;
+}
+.circle {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+.color .label {
+	color: #000 !important;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 3px;
+    position: relative;
+    top: -2px;
+}
+
+.show-more {
+	font-size: 17px;
+	color: #313644;
+	
+}
+.show-more:hover {
+	text-decoration: none;
+}
+a.show-more:after {
+	content: " [\6]";
+}
+a.show-more.collapsed:after  {
+	content: " [+]";
+}
+.show-more1 {
+	font-size: 17px;
+	color: #313644;
+	text-decoration: none;
+}
+a.show-more1.collapsed:after  {
+	content: " \21e2";
+}
+.catalog img {
+	width: 100%;
+}
+.catalog .price {
+	margin-bottom: 30px;
 }
