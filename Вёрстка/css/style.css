@@ -526,3 +526,6 @@ a.show-more1.collapsed:after  {
 .catalog .price {
 	margin-bottom: 30px;
 }
+.col-img-wr img, .thumbnail img {
+	width: 100%;
+}
